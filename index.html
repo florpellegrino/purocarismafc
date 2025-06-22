@@ -2,97 +2,64 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Puro Carisma Fútbol Femenino</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-green-900 font-sans">
+<body class="bg-gradient-to-r from-green-400 via-green-600 to-green-800 text-white font-sans tracking-wide">
 
   <!-- Encabezado -->
-  <header class="bg-green-800 text-white p-6 text-center shadow-lg">
-    <h1 class="text-4xl font-extrabold tracking-wider">Puro Carisma Fútbol Femenino</h1>
-    <p class="text-md mt-2 italic">Villa Urquiza • A falta de talento, Puro Carisma</p>
+  <header class="bg-black bg-opacity-50 backdrop-blur-md p-8 text-center shadow-2xl">
+    <h1 class="text-5xl font-extrabold tracking-widest drop-shadow-lg">Puro Carisma Fútbol Femenino</h1>
+    <p class="text-lg mt-3 italic text-green-300 drop-shadow-md">Villa Urquiza • A falta de talento, Puro Carisma</p>
   </header>
 
-  <!-- Logo -->
-  <section class="flex justify-center mt-6">
-    <img src="logo.png" alt="Logo del equipo" class="w-40 h-40 rounded-full shadow-lg border-4 border-green-800" />
+  <!-- Mascota y Logo -->
+  <section class="flex flex-col md:flex-row justify-center items-center gap-8 mt-8">
+    <img src="https://pplx-res.cloudinary.com/image/private/user_uploads/76267920/5af0ca61-6753-488c-a82f-365f1ea142a2/Peri.jpg" alt="Mascota Puro Carisma" class="w-44 h-44 rounded-full shadow-2xl border-8 border-white bg-orange-100 object-cover hover:scale-105 transition-transform duration-300" />
+    <img src="logo.png" alt="Logo del equipo" class="w-44 h-44 rounded-full shadow-2xl border-8 border-white object-cover hover:scale-105 transition-transform duration-300" />
+  </section>
+
+  <!-- Foto del equipo -->
+  <section class="flex justify-center mt-8">
+    <img src="https://pplx-res.cloudinary.com/image/private/user_uploads/76267920/46856f8e-151d-4d71-ba4e-be6cd809362f/nosotras.jpg" alt="Equipo Puro Carisma" class="w-full max-w-2xl rounded-2xl shadow-2xl border-8 border-green-300 object-cover hover:scale-105 transition-transform duration-300" />
   </section>
 
   <!-- Próximos partidos -->
-  <section class="p-6">
-    <h2 class="text-3xl font-bold mb-4 border-b-2 border-green-800 inline-block">Próximos Partidos</h2>
-    <ul class="list-disc list-inside text-lg space-y-1">
-      <li>Viernes 28/06 - 18:00 vs Las Panteras</li>
-      <li>Domingo 30/06 - 11:00 vs Las Rojas</li>
+  <section class="p-8 max-w-4xl mx-auto">
+    <h2 class="text-4xl font-bold mb-6 border-b-4 border-green-300 inline-block">Próximos Partidos</h2>
+    <ul class="list-disc list-inside text-xl space-y-3 text-green-200">
+      <li class="hover:text-white transition-colors cursor-pointer">Viernes 28/06 - 18:00 vs Las Panteras</li>
+      <li class="hover:text-white transition-colors cursor-pointer">Domingo 30/06 - 11:00 vs Las Rojas</li>
     </ul>
   </section>
 
   <!-- Plantel -->
-  <section class="p-6 bg-green-50">
-    <h2 class="text-3xl font-bold mb-4 border-b-2 border-green-800 inline-block">Plantel</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-center">
-      <div class="bg-white p-4 rounded shadow-md">Micaela Barbiera<br><span class="text-sm text-gray-600">Arquera</span></div>
-      <div class="bg-white p-4 rounded shadow-md">Sabrina Prouvelarie<br><span class="text-sm text-gray-600">Defensora</span></div>
-      <div class="bg-white p-4 rounded shadow-md">Mariana Iñiguez<br><span class="text-sm text-gray-600">Defensora</span></div>
-      <div class="bg-white p-4 rounded shadow-md">Yael Di Giuliano<br><span class="text-sm text-gray-600">Defensora</span></div>
-      <div class="bg-white p-4 rounded shadow-md">Camila Alfonso<br><span class="text-sm text-gray-600">Delantera</span></div>
-      <div class="bg-white p-4 rounded shadow-md">Sol Santos<br><span class="text-sm text-gray-600">Delantera</span></div>
-      <div class="bg-white p-4 rounded shadow-md">Florencia Pellegrino<br><span class="text-sm text-gray-600">Delantera</span></div>
-    </div>
-  </section>
-
-  <!-- Historia -->
-  <section class="p-6">
-    <h2 class="text-3xl font-bold mb-4 border-b-2 border-green-800 inline-block">Nuestra Historia</h2>
-    <p class="text-lg leading-relaxed">
-      Puro Carisma nació en las canchas de Villa Urquiza como un equipo con más corazón que técnica.
-      Desde el primer entrenamiento hasta hoy, cada jugadora aporta lo mejor que tiene: compromiso, compañerismo y puro carisma.
-      Sin entrenadores ni sponsors, pero con más ganas que nadie.
-    </p>
-  </section>
-
-  <!-- Galería -->
-  <section class="p-6 bg-green-50">
-    <h2 class="text-3xl font-bold mb-4 border-b-2 border-green-800 inline-block">Galería</h2>
-    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-      <div class="bg-white rounded shadow h-32 flex items-center justify-center text-gray-400">Foto 1</div>
-      <div class="bg-white rounded shadow h-32 flex items-center justify-center text-gray-400">Foto 2</div>
-      <div class="bg-white rounded shadow h-32 flex items-center justify-center text-gray-400">Foto 3</div>
-    </div>
-  </section>
-
-  <!-- Sponsors -->
-  <section class="p-6">
-    <h2 class="text-3xl font-bold mb-4 border-b-2 border-green-800 inline-block">Sponsors</h2>
-    <p class="text-lg">Buscamos marcas que nos banquen. Si tenés una birrería, kiosco o tienda, sumate a la pasión femenina ⚽</p>
-  </section>
-
-  <!-- Instagram -->
-  <section class="p-6">
-    <h2 class="text-3xl font-bold mb-4 border-b-2 border-green-800 inline-block">Seguinos</h2>
-    <a href="https://www.instagram.com/purocarismafc/" class="text-green-800 underline hover:text-green-600 text-lg" target="_blank">
-      Instagram @purocarismafc
-    </a>
-  </section>
-
-  <!-- Contacto -->
-  <section class="p-6 bg-green-50">
-    <h2 class="text-3xl font-bold mb-4 border-b-2 border-green-800 inline-block">Contacto</h2>
-    <form class="flex flex-col gap-2 max-w-md">
-      <input type="text" placeholder="Nombre" class="border p-2 rounded" />
-      <input type="email" placeholder="Correo" class="border p-2 rounded" />
-      <textarea placeholder="Mensaje" class="border p-2 rounded"></textarea>
-      <button type="submit" class="bg-green-800 text-white px-4 py-2 rounded hover:bg-green-900">
-        Enviar
-      </button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-green-800 text-white text-center p-4 mt-6">
-    © 2025 Puro Carisma FC. Todos los derechos reservados.
-  </footer>
-
-</body>
-</html>
+  <section class="p-8 bg-black bg-opacity-30 backdrop-blur-md max-w-6xl mx-auto rounded-xl shadow-lg">
+    <h2 class="text-4xl font-bold mb-6 border-b-4 border-green-300 inline-block">Plantel</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
+      <div class="bg-gradient-to-br from-green-700 to-green-900 p-6 rounded-xl shadow-xl transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+        <p class="text-xl font-semibold">Micaela Barbieri</p>
+        <span class="text-green-300 italic">Arquera</span>
+      </div>
+      <div class="bg-gradient-to-br from-green-700 to-green-900 p-6 rounded-xl shadow-xl transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+        <p class="text-xl font-semibold">Sabrina Prouvelarie</p>
+        <span class="text-green-300 italic">Defensora</span>
+      </div>
+      <div class="bg-gradient-to-br from-green-700 to-green-900 p-6 rounded-xl shadow-xl transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+        <p class="text-xl font-semibold">Mariana Iñiguez</p>
+        <span class="text-green-300 italic">Defensora</span>
+      </div>
+      <div class="bg-gradient-to-br from-green-700 to-green-900 p-6 rounded-xl shadow-xl transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+        <p class="text-xl font-semibold">Yael Di Giuliano</p>
+        <span class="text-green-300 italic">Defensora</span>
+      </div>
+      <div class="bg-gradient-to-br from-green-700 to-green-900 p-6 rounded-xl shadow-xl transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+        <p class="text-xl font-semibold">Camila Alfonso</p>
+        <span class="text-green-300 italic">Delantera</span>
+      </div>
+      <div class="bg-gradient-to-br from-green-700 to-green-900 p-6 rounded-xl shadow-xl transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+        <p class="text-xl font-semibold">Sol Santos</p>
+        <span class="text-green-300 italic">Delantera</span>
+      </div>
+      <div class="bg-gradient-to-br from-green-700 to
